@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .embedded1 {
+            position: absolute;
+            top: 240px;
+            left: 170px;
+         }
+         .input {
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px'
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <img src="assets/img/logo.png" alt="logo">
+</header>
+<div class="container">
+    <div class="center column">
+        <h3>User details</h3>
+        <p> Full Name*<br> <input type="text" style='border-top: 0px;border-left: 0px; border-right: 0px' required placeholder="Mamano Banano" size="55"></p>
+        <p> Your Birthday*: <input type="date"  style='border-top: 0px;border-left: 0px; border-right: 0px' size="32"> </p>
+        <p><label for="Gender-select" > Gender</label>
+            <select name="Gender" style='border-top: 0px;border-left: 0px; border-right: 0px'  id="Gender-select">
+                <option value="" aria-setsize="30" >Choose an option</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select></p>
+        <p> <label for="Country-select"> Country </label> <br>
+            <select name="Gender" style='border-top: 0px;border-left: 0px; border-right: 0px'  id="Country-select">
+                <option value="Uruguay">Uruguay</option>
+                <option value="Male">UK</option>
+                <option value="Female">USA</option>
+            </select> Phone*
+        <div class="embedded1">
+            <sup>Mobile</sup>  <input type="tel" style='border-top: 0px;border-left: 0px; border-right: 0px' pattern="[0-9]{12}" required placeholder="11 22323 324" size="9">
+            <sup>Fixed </sup>  <input type="tel" style='border-top: 0px;border-left: 0px; border-right: 0px' pattern="[0-9]{12}" placeholder="22 22323 325" size="9">
+        </div></p>
+        <p> Bio<br>
+            <textarea name="Bio" style='border-top: 0px;border-left: 0px; border-right: 0px' rows="3" cols ="59" maxlength="256">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                                                                                                 sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                                                                                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                                                                                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. </textarea><br>
+            <sup>Tell us about yourself</sup> </p>
+        <p> <button type="submit">Submit</button></p> <br>
+    </div>
+    </main>
+    <div class="left column">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="right column">
+        <h3>Right heading</h3>
+    </div>
+</div>
+<footer class="footer">
+    <footer class="footer"><a href="index.html">Return to main page</a></footer>
+    <img src="assets/img/logo.png" alt="logo">
+</footer>
+</div>
+</body>
+</html>
