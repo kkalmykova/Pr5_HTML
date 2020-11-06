@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Paint</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/slide.css">
+
+</head>
+<body>
+
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("draw");
+        var context = canvas.getContext("2d");
+        window.onload = function() {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+        };
+    };
+</script>
+
+<header class="header">
+    <img src="assets/img/logo.png" alt="logo">
+    <h1></h1>
+</header>
+<div class="container">
+    <main class="center column">
+        <article>
+            <h1>Heading</h1>
+            <canvas id="draw" width="870" height="300"style = "border:1px solid #000000;"></canvas>
+            <p></p>
+        </article>
+    </main>
+    <div class="left column">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="paint.html">Paint</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div class="right column">
+        <h3>Drawing tools</h3>
+        <b> Choose brush: <br></b>
+        <div  class="toggle-brush">
+            <input type="radio" value="1" checked = "checked" name="mybrush"/><span1>1px</span1> <br>
+            <input type="radio" value="2" name="mybrush"/><span1>2px</span1><br>
+            <input type="radio" value="5" name="mybrush"/><span1>5px</span1><br>
+            <input type="radio" value="10" name="mybrush"/><span1>10px</span1><br>
+        </div>
+        <br><b> Choose color: <br></b>
+        <div>
+            <input type="color" value = "#001414" id="mycolor" /> <br>
+        </div>
+        <br><button onclick="clearRect()"><b>Clear</b></button> <br>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer"><a href="index.html">Return to main page</a></footer>
+    <img src="assets/img/logo.png" alt="logo">
+</div>
+<script src="assets/js/paint.js"></script>
+</body>
+</html>
